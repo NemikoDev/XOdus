@@ -1,0 +1,17 @@
+{
+  "name": "XOdus",
+  "private": true,
+  "scripts": {
+    "build": "esbuild src/clean.ts --bundle --format=iife --target=firefox128 --outfile=dist/clean.js && cp manifest.json dist/ && cp -r icons dist/",
+    "watch": "esbuild src/clean.ts --bundle --format=iife --outfile=dist/clean.js --watch",
+    "run": "web-ext run --source-dir dist",
+    "package": "web-ext build --source-dir dist",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "esbuild": "^0.24.0",
+    "typescript": "^5.6.0",
+    "web-ext": "^8.0.0",
+    "@types/firefox-webext-browser": "^120.0.0"
+  }
+}
