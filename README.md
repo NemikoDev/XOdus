@@ -9,5 +9,5 @@ Automatically removes embedding from x.com links that reveal device information
 * npm run package (to package as zip)
 
 ### What is this?
-A small and insignificant extension built to remove identification from x.com links.
+A small and insignificant extension built to remove identification (anything after and including "?a=") from x.com links.
 For personal use only.
